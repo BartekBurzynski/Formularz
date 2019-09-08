@@ -1,0 +1,85 @@
+<html>
+<head>
+    <title> Rejestracja </title>
+    <link rel="shortcuticon" href="favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <style type="text/css">
+body {
+    padding: 0px 300px;
+}
+.radioInput {
+    padding-left: 150px;
+}
+        .znaki{
+            font-size: 10px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<h1>Rejestracja</h1>
+<form>
+    Imię <br/> <input type="text" class="form-control" name="firstName" placeholder="Wpisz imie"><br/>
+    Nazwisko: <br/> <input type="text" class="form-control" name="lastName" placeholder="Wpisz nazwisko"><br/>
+    Płeć
+    <div class="radioInput">
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Adres smail</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Wpisz adres email">
+    </div>
+
+    Hasło <br/>
+    <input type="text" class="form-control" name="Password" placeholder="Hasło"> <br/>
+    <div class="znaki">
+        <label class="text-muted"> Min. 8 znaków </label> <br/>
+    </div>
+
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationDefault03">Miasto</label>
+            <input type="text" class="form-control" id="validationDefault03" required>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="validationDefault04">State</label>
+            <select class="form-control" id="validationDefault04">
+                <option value="">Wybierz...</option>
+                <option value="dolnyśląsk">Dolnyśląsk</option>
+                <option value="górnyśląsk">Górnyśląsk</option>
+                <option value="mazowieckie">Mazowieckie</option>
+
+            </select>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="validationDefault05">Zip</label>
+            <input type="text" class="form-control" id="validationDefault05" required>
+        </div>
+    </div>
+
+
+    <label><input type="checkbox">Akceptuje regulamin</label> <br/>
+    <label><input type="checkbox" checked>Wyrażam zgode na otrzymywanie informacji marketingowych</label>
+    <br/>
+    <button type="button" class="btn btn-primary">Rejestruj</button>
+
+
+</form>
+
+</body>
+</html>
